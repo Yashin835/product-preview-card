@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.Card-container {
+    max-width: 370px;
+    width: 100%;
+    background-color: #ffff;
+    border-radius: 15px;
+    padding: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.text-data {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+
+.text-data .Title {
+    margin-top: 0.6rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+
+}
+
+.text-data .Jobs {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.media-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.media-buttons .links{
+width: 35px;
+height: 35px;
+margin: 0px 8px;
+border-radius:50%;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+}
+
+.buttons{
+margin: 20px;
+}
+
+.buttons button{
+border: none;
+background-color: rgb(58, 58, 255);
+color: white;
+padding: 8px 20px;
+border-radius: 20px;
+margin: 0 8px;
+font-weight: 400;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.buttons .button:hover {
+    background-color: #0e4bf1;
+}
+
+@media only screen and (max-width:315px){
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttons button{
+        margin-top: 5px;
+    }
+}
