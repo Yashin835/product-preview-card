@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 20px;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.main-container .second-row {
+  padding: 22px;
+}
+
+.main-container .second-row h5 {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 4px;
+}
+
+.main-container .second-row h1 {
+  color: hsl(212, 21%, 14%);
+  line-height: 32px;
+  font-family: "Fraunces";
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.main-container .second-row :nth-child(3) {
+  color: hsl(228, 12%, 48%);
+  margin-top: 15px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.main-container .second-row .price-tag{
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.main-container .second-row .price-tag :first-child{
+  color:  hsl(158, 36%, 37%);
+  font-size: 30px;
+  font-weight: 700;
+  font-family:"Fraunces";
+}
+.main-container .second-row .price-tag :nth-child(2){
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+picture img{
+  border-radius: 15px 15px 0px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container .second-row .add-cart{
+  padding: 15px 20px;
+  margin-top: 25px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  font-family:"Montserrat" ;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@media  screen and (min-width:470px) {
+  .main-container{
+   display: flex;
+  }
+
+  img{
+    border-radius: 15px 0px 0px 15px;
+  }
+}
